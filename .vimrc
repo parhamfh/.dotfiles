@@ -1,4 +1,4 @@
-" Vundle stuff
+" ### Vundle ###
 set nocompatible               " be iMproved
 filetype off                   " required!
 
@@ -17,6 +17,11 @@ Bundle 'tpope/vim-surround.git'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'kien/ctrlp.vim'
+
+" Colorschemes
+Bundle 'nanotech/jellybeans.vim'
+"Bundle 'garybernhardt/dotfiles/.vim/colors/grb256.vim'
+
 " vim-scripts repos
 Bundle 'L9'
 
@@ -31,17 +36,22 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 
-" My own stuff
-color darkblue
-syntax on
-" Line numbers
+" ### PERSONAL CONFIG ###
+
+" Line Numbers
 set number
+
+" Syntax highlighting (Enable doesn't override color settings 'syntax on' does)
+syntax enable
+
+set background=dark
+colors jellybeans
 
 " Encoding
 set encoding=utf-8
 
-" Text width
-set textwidth=79
+" Text width 0 to avoid vim inserting linebreaks at 79 characters = ANNOYING
+set textwidth=0
 
 " column width
 set tabstop=4
@@ -59,9 +69,9 @@ set smartindent
 set mouse=a
 
 " FOR POWERLINE
+" Set terminal xcolor-256 instead, the proper way
+" set t_Co=256
 
-
-set t_Co=256
 let g:Powerline_symbols = 'unicode'
 " Disable vi-compatibility
 set nocompatible

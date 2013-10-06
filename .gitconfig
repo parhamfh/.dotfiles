@@ -6,15 +6,4 @@
 [color]
 	ui = true
 [color "diff"]
-	meta = magenta dim
-pfh@n168-p164:~> git config --global color.diff.meta "magenta"
-pfh@n168-p164:~> cat .gitconfig
-[user]
-	name = parhamfh
-	email = parhamfh@kth.se
-[push]
-	default = current
-[color]
-	ui = true
-[color "diff"]
 	meta = magenta

@@ -15,8 +15,10 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround.git'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/syntastic'
 
 " Colorschemes
 Bundle 'nanotech/jellybeans.vim'

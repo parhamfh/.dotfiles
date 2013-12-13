@@ -6,7 +6,8 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export PS1="\u@\h:\w> "
 export TERM=xterm-color
 
-alias lime='open -a '\''Sublime Text 2'\'''
+alias lime='open -a '\''Sublime Text'\'''
+alias sou='. sou'
 
 # For python interactive shell and UTF-8 support
 
@@ -27,8 +28,8 @@ alias stash_pull_pop="git stash && git pull && git stash pop"
 
 # Setting PATH for Python 2.7
 # The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH
-export PATH=~/bin:/usr/local/lib:/usr/local/bin:$PATH
+#PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+#export PATH
+#export PATH=~/bin:/usr/local/lib:/usr/local/bin:$PATH
 
 # source ~/.inputrc

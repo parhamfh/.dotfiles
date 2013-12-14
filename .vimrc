@@ -71,7 +71,7 @@ set smartindent
 set mouse=a
 
 " FOR POWERLINE
-" Set terminal xcolor-256 instead, the proper way
+" Set terminal xterm-256color instead, the proper way
 " set t_Co=256
 
 let g:Powerline_symbols = 'unicode'

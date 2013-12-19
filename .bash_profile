@@ -33,3 +33,7 @@ alias stash_pull_pop="git stash && git pull && git stash pop"
 #export PATH=~/bin:/usr/local/lib:/usr/local/bin:$PATH
 
 # source ~/.inputrc
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi

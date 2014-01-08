@@ -7,3 +7,5 @@
 	ui = true
 [color "diff"]
 	meta = magenta
+[core]
+	editor = /usr/bin/vim

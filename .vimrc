@@ -19,6 +19,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
+Bundle 'mustache/vim-mustache-handlebars'
 
 " Colorschemes
 Bundle 'nanotech/jellybeans.vim'

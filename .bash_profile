@@ -14,7 +14,8 @@ alias lime='open -a '\''Sublime Text'\'''
 
 export PYTHONSTARTUP=~/.pythonrc
 
-# export LC_ALL="en_GB.UTF-8"
+export LC_ALL=en_GB.UTF-8
+export LANG=en_GB.UTF-8
 # export PYTHONIOENCODING=UTF-8
 
 # source control

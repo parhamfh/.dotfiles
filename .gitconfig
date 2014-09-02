@@ -1,11 +1,11 @@
 [user]
-	name = parhamfh
-	email = parhamfh@kth.se
-[push]
-	default = current
-[color]
-	ui = true
-[color "diff"]
-	meta = magenta
+    name = Pärham Fazelzadeh
+    email = parhamfh@kth.se
 [core]
-	editor = /usr/bin/vim
+    editor = /usr/bin/vim
+[push]
+    default = current
+[color]
+    ui = true
+[color "diff"]
+    meta = magenta

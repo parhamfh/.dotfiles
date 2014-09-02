@@ -3,7 +3,7 @@ export CLICOLOR=1
 #export LSCOLORS=ExFxCxDxBxegedabagacad
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 #change terminal prompt
-export PS1="\u@\h:\w> "
+export PS1="\u@\h:\w|\n> "
 
 # Set by Iterm2
 #export TERM=xterm-256color

@@ -4,10 +4,11 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 #change terminal prompt
 export PS1="\u@\h:\w> "
-export TERM=xterm-color
+
+# Set by Iterm2
+#export TERM=xterm-256color
 
 alias lime='open -a '\''Sublime Text'\'''
-alias sou='. sou'
 
 # For python interactive shell and UTF-8 support
 
@@ -25,6 +26,8 @@ alias pull="git pull"
 alias pp="git pull && git push"
 alias st="git status"
 alias stash_pull_pop="git stash && git pull && git stash pop"
+alias assume="git update-index --assume-unchanged"
+alias nosume="git update-index --no-assume-unchanged"
 
 # Setting PATH for Python 2.7
 # The orginal version is saved in .bash_profile.pysave

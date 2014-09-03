@@ -56,6 +56,8 @@ set encoding=utf-8
 " Text width 0 to avoid vim inserting linebreaks at 79 characters = ANNOYING
 set textwidth=0
 
+"" Standard indentation settings
+
 " column width
 set tabstop=4
 " expand tabs to spaces
@@ -64,6 +66,15 @@ set expandtab
 set softtabstop=4
 " How many columns when you use reindent (<< and >>)
 set shiftwidth=4
+
+" Indent options
+set autoindent
+set smartindent
+
+"" Language specific
+
+" Ruby
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 
 " Indent options
 set autoindent

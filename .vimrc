@@ -93,3 +93,6 @@ set nocompatible
 set laststatus=2
 " For powerline symbols
 let g:Powerline_symbols = 'fancy'
+
+" Left/Right arrow keys jump to next/prev lines at sentence edges
+set whichwrap+=<,>,[,]

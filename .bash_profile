@@ -8,15 +8,10 @@ export PS1="\u@\h:\w|\n> "
 # Set by Iterm2
 #export TERM=xterm-256color
 
-alias lime='open -a '\''Sublime Text'\'''
-
-# For python interactive shell and UTF-8 support
-
-export PYTHONSTARTUP=~/.pythonrc
+alias lime='subl'
 
 export LC_ALL=en_GB.UTF-8
 export LANG=en_GB.UTF-8
-# export PYTHONIOENCODING=UTF-8
 
 # source control
 alias gitrh='git reset HEAD --hard'
@@ -32,13 +27,6 @@ alias stash_pull_pop="git stash && git pull && git stash pop"
 alias assume="git update-index --assume-unchanged"
 alias nosume="git update-index --no-assume-unchanged"
 
-# Setting PATH for Python 2.7
-# The orginal version is saved in .bash_profile.pysave
-#PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-#export PATH
-#export PATH=~/bin:/usr/local/lib:/usr/local/bin:$PATH
-
-# source ~/.inputrc
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash

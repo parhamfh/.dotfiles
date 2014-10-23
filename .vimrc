@@ -3,41 +3,41 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
-" My Bundles here:
+" My Plugins here:
 "
 " original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround.git'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'mustache/vim-mustache-handlebars'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround.git'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
 
 " Colorschemes
-Bundle 'nanotech/jellybeans.vim'
-"Bundle 'garybernhardt/dotfiles/.vim/colors/grb256.vim'
+Plugin 'nanotech/jellybeans.vim'
+"Plugin 'garybernhardt/dotfiles/.vim/colors/grb256.vim'
 
 " vim-scripts repos
-Bundle 'L9'
+Plugin 'L9'
 
+call vundle#end()
 filetype plugin indent on     " required!
 "
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList          - list configured bundles
+" :PluginInstall(!)    - install(update) bundles
+" :PluginSearch(!) foo - search(or refresh cache first) for foo
+" :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+" NOTE: comments after Plugin command are not allowed..
 
 " ### PERSONAL CONFIG ###
 
@@ -56,7 +56,7 @@ set encoding=utf-8
 " Text width 0 to avoid vim inserting linebreaks at 79 characters = ANNOYING
 set textwidth=0
 
-"" Standard indentation settings
+" Standard indentation settings
 
 " column width
 set tabstop=4
@@ -72,18 +72,14 @@ set autoindent
 set smartindent
 
 "" Language specific
-
 " Ruby
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 
-" Indent options
-set autoindent
-set smartindent
 " Mouse mode
 set mouse=a
 
 " FOR POWERLINE
-" Set terminal xterm-256color instead, the proper way
+" Set terminal xcolor-256 instead, the proper way
 " set t_Co=256
 
 let g:Powerline_symbols = 'unicode'
@@ -93,6 +89,3 @@ set nocompatible
 set laststatus=2
 " For powerline symbols
 let g:Powerline_symbols = 'fancy'
-
-" Left/Right arrow keys jump to next/prev lines at sentence edges
-set whichwrap+=<,>,[,]

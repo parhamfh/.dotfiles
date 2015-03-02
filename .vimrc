@@ -19,6 +19,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'kchmck/vim-coffee-script'
 
 " Colorschemes
 Plugin 'nanotech/jellybeans.vim'

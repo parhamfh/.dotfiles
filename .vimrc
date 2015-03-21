@@ -90,3 +90,6 @@ set nocompatible
 set laststatus=2
 " For powerline symbols
 let g:Powerline_symbols = 'fancy'
+
+" Use the C++11 standard with Syntastic
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'

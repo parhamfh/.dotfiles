@@ -8,4 +8,5 @@
     "trim_trailing_white_space_on_save": true,
     "rulers": [81],
     "word_wrap": true,
+    "show_minimap": false,
 }

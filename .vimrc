@@ -20,6 +20,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'mxw/vim-jsx'
 
 " Colorschemes
 Plugin 'nanotech/jellybeans.vim'

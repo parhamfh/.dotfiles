@@ -94,3 +94,6 @@ let g:Powerline_symbols = 'fancy'
 
 " Use the C++11 standard with Syntastic
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+
+" Activate .jsx syntax for .js files too (??)
+let g:jsx_ext_required = 0

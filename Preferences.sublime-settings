@@ -9,4 +9,9 @@
     "rulers": [81],
     "word_wrap": true,
     "show_minimap": false,
+    "remember_open_files": true,
+    
+    "spell_checking": true,
+    "color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+    "theme": "Spacegray.sublime-theme",
 }

@@ -3,6 +3,7 @@
     email = parhamfh@kth.se
 [core]
     editor = /usr/bin/vim
+    autocrlf = input
 [push]
     default = current
 [color]

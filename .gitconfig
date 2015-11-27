@@ -4,6 +4,7 @@
 [core]
     editor = /usr/bin/vim
     autocrlf = input
+    excludesfile = ~/.gitignore
 [push]
     default = current
 [color]

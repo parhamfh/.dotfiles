@@ -7,20 +7,22 @@ call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " My Plugins here:
 "
 " original repos on github
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround.git'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Plugin 'Lokaltog/vim-easymotion'
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'easymotion/vim-easymotion'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'mxw/vim-jsx'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'editorconfig/editorconfig-vim'
 
 " Colorschemes
 Plugin 'nanotech/jellybeans.vim'
@@ -72,16 +74,11 @@ set shiftwidth=4
 " Indent options
 set autoindent
 set smartindent
-
-"" Language specific
-" Ruby
-autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
-
 " Mouse mode
 set mouse=a
 
 " FOR POWERLINE
-" Set terminal xcolor-256 instead, the proper way
+" Set terminal xterm-256color instead, the proper way
 " set t_Co=256
 
 let g:Powerline_symbols = 'unicode'
@@ -91,6 +88,8 @@ set nocompatible
 set laststatus=2
 " For powerline symbols
 let g:Powerline_symbols = 'fancy'
+
+set whichwrap+=<,>,[,]
 
 " Use the C++11 standard with Syntastic
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'

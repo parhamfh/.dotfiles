@@ -77,6 +77,9 @@ set smartindent
 " Mouse mode
 set mouse=a
 
+" FOR CTRL-P
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|dist)|(\.(swp|git))$'
+
 " FOR POWERLINE
 " Set terminal xterm-256color instead, the proper way
 " set t_Co=256

@@ -28,6 +28,8 @@ alias stash_pull_pop="git stash && git pull && git stash pop"
 alias assume="git update-index --assume-unchanged"
 alias nosume="git update-index --no-assume-unchanged"
 
+# For Haskell / Project Euler
+alias eul='ghc -outputdir ~/dev/euler/haskell/outputdir'
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash

@@ -24,6 +24,9 @@ Plugin 'mxw/vim-jsx'
 Plugin 'mtscout6/vim-cjsx'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'tpope/vim-commentary'
+Plugin 'majutsushi/tagbar'
+" Plugin 'Valloric/YouCompleteMe'
 
 " Colorschemes
 Plugin 'nanotech/jellybeans.vim'
@@ -104,3 +107,15 @@ let g:jsx_ext_required = 0
 " Remove trailing whitespace
 autocmd BufWritePre *.sql :%s/\s\+$//e
 autocmd BufWritePre *.py :%s/\s\+$//e
+
+" recognize Markdown
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+
+" MAP KEYS
+" inoremap <ESC><BS> <C-W> "Doesn't work
+
+" Needed for backspace since Vim 8 
+set backspace=indent,eol,start
+
+" BINDINGS
+nmap \r :TagbarToggle<CR>

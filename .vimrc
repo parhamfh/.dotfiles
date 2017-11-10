@@ -107,6 +107,7 @@ let g:jsx_ext_required = 0
 " Remove trailing whitespace
 autocmd BufWritePre *.sql :%s/\s\+$//e
 autocmd BufWritePre *.py :%s/\s\+$//e
+autocmd BufWritePre *.go :%s/\s\+$//e
 
 " recognize Markdown
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown

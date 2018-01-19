@@ -122,3 +122,6 @@ set backspace=indent,eol,start
 nmap \r :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_autoclose = 1
+
+" Good settings
+set scrolloff = 5

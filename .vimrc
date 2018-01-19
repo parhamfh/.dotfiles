@@ -125,3 +125,10 @@ let g:tagbar_autoclose = 1
 
 " Good settings
 set scrolloff=7
+
+" Cut & Copy to OS X
+" " ctrl-x for cut
+vmap <C-x> :!pbcopy<cr>
+
+" ctrl-c for copy
+vmap <C-c> :w !pbcopy<cr><cr>

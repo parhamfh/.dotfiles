@@ -124,4 +124,4 @@ let g:tagbar_autofocus = 1
 let g:tagbar_autoclose = 1
 
 " Good settings
-set scrolloff = 5
+set scrolloff=7

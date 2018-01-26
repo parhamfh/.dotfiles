@@ -26,7 +26,7 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'majutsushi/tagbar'
-" Plugin 'Valloric/YouCompleteMe'
+Plugin 'tmhedberg/SimpylFold'
 
 " Colorschemes
 Plugin 'nanotech/jellybeans.vim'

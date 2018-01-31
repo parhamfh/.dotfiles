@@ -132,3 +132,7 @@ vmap <C-x> :!pbcopy<cr>
 
 " ctrl-c for copy
 vmap <C-c> :w !pbcopy<cr><cr>
+
+" Folding
+" autocmd Filetype python setlocal foldmethod=indent
+set foldopen-=block

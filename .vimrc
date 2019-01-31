@@ -125,7 +125,7 @@ set backspace=indent,eol,start
 " BINDINGS
 nmap \r :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
-let g:tagbar_autoclose = 1 
+let g:tagbar_autoclose = 1
 
 set scrolloff=7
 
@@ -136,7 +136,7 @@ vmap <C-x> :!pbcopy<cr>
 " ctrl-c for copy
 vmap <C-c> :w !pbcopy<cr><cr>
 
-" Folding 
+" Folding
 " autocmd Filetype python setlocal foldmethod=indent
 set foldopen-=block
 

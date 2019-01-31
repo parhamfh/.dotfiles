@@ -27,6 +27,9 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'majutsushi/tagbar'
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'fatih/vim-go'
+Plugin 'udalov/kotlin-vim'
+Plugin 'prettier/vim-prettier'
 
 " Colorschemes
 Plugin 'nanotech/jellybeans.vim'
@@ -107,6 +110,7 @@ let g:jsx_ext_required = 0
 " Remove trailing whitespace
 autocmd BufWritePre *.sql :%s/\s\+$//e
 autocmd BufWritePre *.py :%s/\s\+$//e
+autocmd BufWritePre *.js :%s/\s\+$//e
 autocmd BufWritePre *.go :%s/\s\+$//e
 
 " recognize Markdown
@@ -121,9 +125,8 @@ set backspace=indent,eol,start
 " BINDINGS
 nmap \r :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
-let g:tagbar_autoclose = 1
+let g:tagbar_autoclose = 1 
 
-" Good settings
 set scrolloff=7
 
 " Cut & Copy to OS X
@@ -133,6 +136,9 @@ vmap <C-x> :!pbcopy<cr>
 " ctrl-c for copy
 vmap <C-c> :w !pbcopy<cr><cr>
 
-" Folding
+" Folding 
 " autocmd Filetype python setlocal foldmethod=indent
 set foldopen-=block
+
+"""" PRETTIER
+autocmd BufWritePre *.js,*.jsx,*.html,*.css PrettierAsync

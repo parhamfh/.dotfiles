@@ -134,6 +134,14 @@ let g:tagbar_autoclose = 1
 
 set scrolloff=7
 
+""""" MY BINDINGS """"
+
+" Start/end of line
+map <C-a> <ESC>^
+imap <C-a> <ESC>I
+map <C-e> <ESC>$
+imap <C-e> <ESC>A
+
 " Cut & Copy to OS X
 " " ctrl-x for cut
 vmap <C-x> :!pbcopy<cr>

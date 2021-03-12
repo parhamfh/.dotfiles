@@ -86,7 +86,8 @@ set smartindent
 set mouse=a
 
 " FOR CTRL-P
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|dist)|(\.(swp|git))$|\v\.pyc'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|dist)|(\.(swp|git|DS_Store))$|\v\.pyc'
+let g:ctrlp_show_hidden = 1
 
 " FOR POWERLINE
 " Set terminal xterm-256color instead, the proper way

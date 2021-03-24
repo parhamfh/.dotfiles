@@ -79,12 +79,6 @@ set backspace=indent,eol,start
 " Mouse mode
 set mouse=a
 
-" Use the C++11 standard with Syntastic
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
-
-" Activate .jsx syntax for .js files too (??)
-let g:jsx_ext_required = 0
-
 " Remove trailing whitespace
 autocmd BufWritePre *.sql :%s/\s\+$//e
 autocmd BufWritePre *.py :%s/\s\+$//e

@@ -73,6 +73,9 @@ set shiftwidth=4
 set autoindent
 set smartindent
 
+" Needed for backspace since Vim 8 
+set backspace=indent,eol,start
+
 " Mouse mode
 set mouse=a
 
